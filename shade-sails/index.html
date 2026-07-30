@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+<script src="./image-slot.js"></script>
+<style>
+  html, body { margin:0; padding:0; background:#f7f4ef; }
+  * { box-sizing:border-box; }
+  a { color:#1b4d3e; text-decoration:none; }
+  a:hover { color:#c9762a; }
+  input, select, textarea, button { font-family:'Source Sans 3', system-ui, sans-serif; }
+  ::placeholder { color:#9b958c; }
+</style>
+</helmet>
+
+<div style="font-family:'Source Sans 3', system-ui, sans-serif; color:#1f1d19; background:#f7f4ef; overflow-x:hidden">
+
+  <!-- header: no nav, phone only -->
+  <header style="position:sticky; top:0; z-index:40; background:rgba(247,244,239,0.94); backdrop-filter:blur(10px); border-bottom:1px solid #e2ddd3">
+    <div style="max-width:1220px; margin:0 auto; padding:14px 20px; display:flex; align-items:center; justify-content:space-between; gap:16px">
+      <div style="display:flex; align-items:baseline; gap:10px">
+        <span style="font-family:'Archivo',sans-serif; font-weight:800; font-size:21px; letter-spacing:-0.02em; color:#12241d">QLD SHADE SAILS</span>
+      </div>
+      <div style="display:flex; align-items:center; gap:12px">
+        <div style="text-align:right; line-height:1.1">
+          <div style="font-size:11.5px; text-transform:uppercase; letter-spacing:0.12em; color:#6f6a60">Talk to an installer</div>
+          <a href="tel:0411884153" style="font-family:'Archivo',sans-serif; font-weight:700; font-size:20px; color:#12241d">0411 884 153</a>
+        </div>
+        <a href="#quote" style="background:#c9762a; color:#fff; font-weight:700; font-size:15px; padding:12px 20px; border-radius:6px; box-shadow:0 2px 0 #a75d1c" style-hover="background:#b8681f">Get a free quote</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- hero -->
+  <section style="position:relative; background:#12241d; color:#f2efe8; padding:0">
+    <div style="position:absolute; inset:0; opacity:0.5">
+      <image-slot id="ss-hero" shape="rect" fit="cover" src="./uploads/25-0781-Mant-Finished-Photo-3.jpeg" placeholder="Hero: wide shot of an installed shade sail over a pool / patio"></image-slot>
+    </div>
+    <div style="position:absolute; inset:0; background:linear-gradient(100deg,#12241df2 0%,#12241de0 46%,#12241d55 100%); pointer-events:none"></div>
+    <div style="position:relative; max-width:1220px; margin:0 auto; padding:64px 20px 72px; display:grid; grid-template-columns:1.15fr 0.85fr; gap:56px; align-items:start">
+
+      <div style="pointer-events:none">
+        <div style="display:inline-flex; align-items:center; gap:9px; border:1px solid #ffffff33; border-radius:100px; padding:7px 14px; font-size:13px; letter-spacing:0.06em; text-transform:uppercase; color:#e0a763; margin-bottom:22px">
+          <span style="width:6px; height:6px; border-radius:50%; background:#e0a763"></span>25+ years in the shade sail industry
+        </div>
+        <h1 style="font-family:'Archivo',sans-serif; font-weight:800; font-size:60px; line-height:1.02; letter-spacing:-0.03em; margin:0 0 20px; text-wrap:balance">Custom shade sails built for Queensland heat, wind and storms.</h1>
+        <p style="font-size:20px; line-height:1.55; color:#cfd8ce; max-width:560px; margin:0 0 30px; text-wrap:pretty">Engineered, Australian-made sails for pools, patios, driveways, playgrounds and small commercial sites — measured on site, tensioned properly, installed to last.</p>
+
+        <div style="display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px 24px; max-width:540px; margin-bottom:34px">
+          <div style="display:flex; gap:10px; align-items:flex-start; font-size:16.5px; color:#e8e4db"><span style="color:#e0a763; font-weight:700">✓</span>Blocks up to 98% of UV</div>
+          <div style="display:flex; gap:10px; align-items:flex-start; font-size:16.5px; color:#e8e4db"><span style="color:#e0a763; font-weight:700">✓</span>10-year fabric warranty</div>
+          <div style="display:flex; gap:10px; align-items:flex-start; font-size:16.5px; color:#e8e4db"><span style="color:#e0a763; font-weight:700">✓</span>Marine-grade stainless fixings</div>
+          <div style="display:flex; gap:10px; align-items:flex-start; font-size:16.5px; color:#e8e4db"><span style="color:#e0a763; font-weight:700">✓</span>Family owned &amp; locally run</div>
+        </div>
+
+        <div style="display:flex; gap:14px; flex-wrap:wrap; pointer-events:auto">
+          <a href="tel:0411884153" style="display:inline-flex; align-items:center; gap:10px; background:#e0a763; color:#12241d; font-family:'Archivo',sans-serif; font-weight:700; font-size:18px; padding:16px 26px; border-radius:7px" style-hover="background:#eeb673">Call 0411 884 153</a>
+          <a href="#quote" style="display:inline-flex; align-items:center; gap:10px; border:1.5px solid #ffffff44; color:#f2efe8; font-family:'Archivo',sans-serif; font-weight:700; font-size:18px; padding:16px 26px; border-radius:7px" style-hover="background:#ffffff14">Get my free quote</a>
+        </div>
+      </div>
+
+      <!-- form card -->
+      <div id="quote" style="background:#fbf9f5; color:#1f1d19; border-radius:12px; padding:28px; box-shadow:0 26px 60px rgba(0,0,0,0.35); scroll-margin-top:110px">
+        <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+          <div style="padding:26px 4px; text-align:center">
+            <div style="width:56px; height:56px; border-radius:50%; background:#1b4d3e; color:#fff; display:flex; align-items:center; justify-content:center; font-size:28px; margin:0 auto 18px">✓</div>
+            <h3 style="font-family:'Archivo',sans-serif; font-weight:800; font-size:26px; margin:0 0 10px; letter-spacing:-0.02em">Request received</h3>
+            <p style="font-size:16.5px; line-height:1.55; color:#5c5750; margin:0 0 22px">Thanks {{ sentName }} — one of our installers will call you shortly to arrange your free on-site measure and quote.</p>
+            <a href="tel:0411884153" style="display:inline-block; background:#c9762a; color:#fff; font-weight:700; padding:14px 22px; border-radius:6px">Need it sooner? Call 0411 884 153</a>
+          </div>
+        </sc-if>
+        <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+          <div>
+            <h2 style="font-family:'Archivo',sans-serif; font-weight:800; font-size:27px; line-height:1.15; letter-spacing:-0.025em; margin:0 0 6px">Free on-site measure &amp; quote</h2>
+            <p style="font-size:15.5px; color:#5c5750; margin:0 0 20px">No pressure, no obligation. We'll call you back today.</p>
+            <form onSubmit="{{ onSubmit }}" style="display:grid; gap:12px">
+              <div style="display:grid; gap:6px">
+                <label for="ss-name" style="font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#6f6a60">Name</label>
+                <input id="ss-name" name="name" required="" placeholder="Your name" style="width:100%; padding:13px 14px; font-size:16px; border:1.5px solid #ddd6ca; border-radius:6px; background:#fff" style-focus="border-color:#1b4d3e; outline:none" />
+              </div>
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px">
+                <div style="display:grid; gap:6px">
+                  <label for="ss-phone" style="font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#6f6a60">Phone</label>
+                  <input id="ss-phone" name="phone" type="tel" required="" placeholder="04__ ___ ___" style="width:100%; padding:13px 14px; font-size:16px; border:1.5px solid #ddd6ca; border-radius:6px; background:#fff" style-focus="border-color:#1b4d3e; outline:none" />
+                </div>
+                <div style="display:grid; gap:6px">
+                  <label for="ss-suburb" style="font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#6f6a60">Suburb</label>
+                  <input id="ss-suburb" name="suburb" required="" placeholder="e.g. Carindale" style="width:100%; padding:13px 14px; font-size:16px; border:1.5px solid #ddd6ca; border-radius:6px; background:#fff" style-focus="border-color:#1b4d3e; outline:none" />
+                </div>
+              </div>
+              <div style="display:grid; gap:6px">
+                <label for="ss-email" style="font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#6f6a60">Email</label>
+                <input id="ss-email" name="email" type="email" required="" placeholder="you@email.com" style="width:100%; padding:13px 14px; font-size:16px; border:1.5px solid #ddd6ca; border-radius:6px; background:#fff" style-focus="border-color:#1b4d3e; outline:none" />
+              </div>
+              <div style="display:grid; gap:6px">
+                <label for="ss-area" style="font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#6f6a60">What needs shading?</label>
+                <select id="ss-area" name="area" style="width:100%; padding:13px 14px; font-size:16px; border:1.5px solid #ddd6ca; border-radius:6px; background:#fff" style-focus="border-color:#1b4d3e; outline:none">
+                  <option>Pool area</option>
+                  <option>Patio, deck or backyard</option>
+                  <option>Carport or driveway</option>
+                  <option>Playground or childcare</option>
+                  <option>School or commercial site</option>
+                  <option>Repair or replace an existing sail</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <button type="submit" style="margin-top:6px; width:100%; background:#c9762a; color:#fff; font-family:'Archivo',sans-serif; font-weight:700; font-size:19px; padding:17px; border:none; border-radius:7px; cursor:pointer; box-shadow:0 3px 0 #a75d1c" style-hover="background:#b8681f">Book my free quote →</button>
+              <p style="font-size:13px; color:#8b857b; text-align:center; margin:4px 0 0">We only use your details to quote your job. No spam, ever.</p>
+            </form>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+  </section>
+
+  <!-- proof strip -->
+  <section style="background:#fbf9f5; border-bottom:1px solid #e6e0d6">
+    <div style="max-width:1220px; margin:0 auto; padding:26px 20px; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:24px; text-align:center">
+      <div><div style="font-family:'Archivo',sans-serif; font-weight:800; font-size:34px; color:#1b4d3e; letter-spacing:-0.02em">25+</div><div style="font-size:14.5px; color:#6f6a60">years in the industry</div></div>
+      <div><div style="font-family:'Archivo',sans-serif; font-weight:800; font-size:34px; color:#1b4d3e; letter-spacing:-0.02em">1,000s</div><div style="font-size:14.5px; color:#6f6a60">sails installed across QLD</div></div>
+      <div><div style="font-family:'Archivo',sans-serif; font-weight:800; font-size:34px; color:#1b4d3e; letter-spacing:-0.02em">10 yr</div><div style="font-size:14.5px; color:#6f6a60">fabric warranty</div></div>
+      <div><div style="font-family:'Archivo',sans-serif; font-weight:800; font-size:34px; color:#1b4d3e; letter-spacing:-0.02em">100%</div><div style="font-size:14.5px; color:#6f6a60">Australian made</div></div>
+    </div>
+  </section>
+
+  <!-- applications -->
+  <section style="max-width:1220px; margin:0 auto; padding:76px 20px 20px">
+    <div style="max-width:720px; margin-bottom:36px">
+      <div style="font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:0.14em; color:#c9762a; margin-bottom:12px">What we shade</div>
+      <h2 style="font-family:'Archivo',sans-serif; font-weight:800; font-size:42px; line-height:1.08; letter-spacing:-0.03em; margin:0 0 14px">Every sail is designed for your space — not pulled off a shelf.</h2>
+      <p style="font-size:18.5px; line-height:1.6; color:#5c5750; margin:0; text-wrap:pretty">We track the sun over your property, measure the area, set sturdy anchor points and tension the cloth correctly so it holds its shape for years.</p>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px">
+      <sc-for list="{{ applications }}" as="app" hint-placeholder-count="4">
+        <article style="background:#fff; border:1px solid #e6e0d6; border-radius:10px; overflow:hidden; display:flex; flex-direction:column" style-hover="border-color:#c9762a">
+          <div style="height:190px; background:#eeeae2"><image-slot id="{{ app.slot }}" shape="rect" fit="cover" placeholder="{{ app.ph }}"></image-slot></div>
+          <div style="padding:20px 20px 22px; display:flex; flex-direction:column; gap:9px; flex:1">
+            <h3 style="font-family:'Archivo',sans-serif; font-weight:700; font-size:20px; margin:0; letter-spacing:-0.01em">{{ app.title }}</h3>
+            <p style="font-size:15.5px; line-height:1.5; color:#5c5750; margin:0">{{ app.body }}</p>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- why us -->
+  <section style="max-width:1220px; margin:0 auto; padding:70px 20px">
+    <div style="background:#1b4d3e; border-radius:14px; padding:52px 48px; color:#eef2ec">
+      <h2 style="font-family:'Archivo',sans-serif; font-weight:800; font-size:38px; letter-spacing:-0.03em; margin:0 0 8px">Why homeowners choose us over a cheap kit</h2>
+      <p style="font-size:18px; color:#bfcfc4; margin:0 0 38px; max-width:640px">Poor design, undersized fixings and sails that fail after the first storm — that's what we built this business to fix.</p>
+      <div style="display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:34px 40px">
+        <sc-for list="{{ reasons }}" as="r" hint-placeholder-count="6">
+          <div style="border-top:2px solid #e0a76355; padding-top:16px">
+            <h3 style="font-family:'Archivo',sans-serif; font-weight:700; font-size:19px; margin:0 0 8px; color:#fff">{{ r.title }}</h3>
+            <p style="font-size:16px; line-height:1.55; color:#bfcfc4; margin:0">{{ r.body }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- process -->
+  <section style="max-width:1220px; margin:0 auto; padding:10px 20px 70px">
+    <h2 style="font-family:'Archivo',sans-serif; font-weight:800; font-size:38px; letter-spacing:-0.03em; margin:0 0 34px; text-align:center">From first call to finished sail</h2>
+    <div style="display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px">
+      <sc-for list="{{ steps }}" as="s" hint-placeholder-count="4">
+        <div style="background:#fff; border:1px solid #ded7ca; border-top:4px solid #c9762a; border-radius:10px; padding:26px 24px; box-shadow:0 10px 24px -12px rgba(18,36,29,0.22), 0 2px 4px rgba(18,36,29,0.06)">
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px">
+            <span style="width:30px; height:30px; flex-shrink:0; border-radius:50%; background:#c9762a; color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Archivo',sans-serif; font-weight:800; font-size:16px">{{ s.n }}</span>
+            <span style="font-family:'Archivo',sans-serif; font-weight:800; font-size:13px; color:#8b857b; letter-spacing:0.14em">STEP {{ s.n }}</span>
+          </div>
+          <h3 style="font-family:'Archivo',sans-serif; font-weight:700; font-size:19px; margin:0 0 8px">{{ s.title }}</h3>
+          <p style="font-size:15.5px; line-height:1.5; color:#5c5750; margin:0">{{ s.body }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- projects + testimonial -->
+  <section style="background:#fbf9f5; border-top:1px solid #e6e0d6; border-bottom:1px solid #e6e0d6">
+    <div style="max-width:1220px; margin:0 auto; padding:70px 20px">
+      <h2 style="font-family:'Archivo',sans-serif; font-weight:800; font-size:38px; letter-spacing:-0.03em; margin:0 0 28px">Recent installs</h2>
+      <sc-if value="{{ projects }}" hint-placeholder-val="{{ true }}">
+      <div style="display:grid; grid-template-columns:2fr 1fr 1fr; grid-template-rows:200px 200px; gap:14px">
+        <div style="grid-row:span 2; border-radius:10px; overflow:hidden"><image-slot id="ss-proj1" shape="rect" fit="cover" placeholder="Feature install photo"></image-slot></div>
+        <div style="border-radius:10px; overflow:hidden"><image-slot id="ss-proj2" shape="rect" fit="cover" placeholder="Install photo"></image-slot></div>
+        <div style="border-radius:10px; overflow:hidden"><image-slot id="ss-proj3" shape="rect" fit="cover" placeholder="Install photo"></image-slot></div>
+        <div style="border-radius:10px; overflow:hidden"><image-slot id="ss-proj4" shape="rect" fit="cover" placeholder="Install photo"></image-slot></div>
+        <div style="border-radius:10px; overflow:hidden"><image-slot id="ss-proj5" shape="rect" fit="cover" placeholder="Install photo"></image-slot></div>
+      </div>
+      </sc-if>
+
+    </div>
+  </section>
+
+  <!-- testimonials -->
+  <section style="max-width:1220px; margin:0 auto; padding:76px 20px 66px">
+    <div style="display:flex; flex-direction:column; align-items:center; text-align:center; margin-bottom:40px">
+      <div style="display:flex; gap:5px; color:#e0a763; font-size:30px; line-height:1; margin-bottom:14px">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+      <div style="font-family:'Archivo',sans-serif; font-weight:800; font-size:20px; letter-spacing:-0.01em; margin-bottom:6px">5.0 out of 5 — rated by our customers</div>
+      <h2 style="font-family:'Archivo',sans-serif; font-weight:800; font-size:38px; line-height:1.08; letter-spacing:-0.03em; margin:12px 0 0; max-width:16ch; text-wrap:balance">What our customers say</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; align-items:stretch">
+      <sc-for list="{{ testimonials }}" as="t" hint-placeholder-count="3">
+        <figure style="margin:0; background:#fff; border:1px solid #ded7ca; border-radius:12px; padding:28px 26px 24px; display:flex; flex-direction:column; gap:16px; box-shadow:0 10px 24px -14px rgba(18,36,29,0.2)">
+          <div style="display:flex; gap:4px; color:#e0a763; font-size:18px; line-height:1">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <blockquote style="margin:0; font-size:16.5px; line-height:1.6; color:#3b382f; flex:1; text-wrap:pretty">{{ t.quote }}</blockquote>
+          <figcaption style="display:flex; align-items:center; gap:12px; border-top:1px solid #ece6da; padding-top:16px">
+            <span style="font-family:'Archivo',sans-serif; font-weight:700; font-size:16.5px; color:#1f1d19">{{ t.name }}</span>
+          </figcaption>
+        </figure>
+      </sc-for>
+    </div>
+    <div style="display:flex; justify-content:center; margin-top:36px">
+      <a href="#quote" style="background:#c9762a; color:#fff; font-family:'Archivo',sans-serif; font-weight:700; font-size:18px; padding:16px 28px; border-radius:7px; box-shadow:0 3px 0 #a75d1c" style-hover="background:#b8681f">Get my free quote</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section style="max-width:900px; margin:0 auto; padding:72px 20px">
+    <h2 style="font-family:'Archivo',sans-serif; font-weight:800; font-size:38px; letter-spacing:-0.03em; margin:0 0 30px; text-align:center">Questions we get asked most</h2>
+    <div style="display:grid; gap:10px">
+      <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="5">
+        <div style="background:#fff; border:1px solid #e6e0d6; border-radius:9px; overflow:hidden">
+          <button onClick="{{ f.toggle }}" style="width:100%; display:flex; align-items:center; justify-content:space-between; gap:16px; text-align:left; background:none; border:none; padding:20px 22px; cursor:pointer; font-family:'Archivo',sans-serif; font-weight:700; font-size:18.5px; color:#1f1d19" style-hover="background:#faf7f2">
+            {{ f.q }}
+            <span style="color:#c9762a; font-size:22px; flex-shrink:0">{{ f.icon }}</span>
+          </button>
+          <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
+            <p style="margin:0; padding:0 22px 22px; font-size:16.5px; line-height:1.6; color:#5c5750; max-width:70ch">{{ f.a }}</p>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- final CTA -->
+  <section style="background:#12241d; color:#f2efe8">
+    <div style="max-width:1220px; margin:0 auto; padding:66px 20px; display:grid; grid-template-columns:1.1fr 0.9fr; gap:48px; align-items:center">
+      <div>
+        <h2 style="font-family:'Archivo',sans-serif; font-weight:800; font-size:44px; line-height:1.05; letter-spacing:-0.03em; margin:0 0 16px">Ready for shade before the next heatwave?</h2>
+        <p style="font-size:19px; line-height:1.55; color:#cfd8ce; margin:0 0 12px; max-width:520px">Call now and speak straight to an installer, or send your details and we'll come measure up — free, and with a written quote.</p>
+        <p style="font-size:15.5px; color:#8fa396; margin:0">Servicing Brisbane, Redlands, Logan, Ipswich, Gatton &amp; Beenleigh.</p>
+      </div>
+      <div style="display:grid; gap:12px">
+        <a href="tel:0411884153" style="display:flex; align-items:center; justify-content:center; gap:12px; background:#e0a763; color:#12241d; font-family:'Archivo',sans-serif; font-weight:800; font-size:24px; padding:22px; border-radius:8px; letter-spacing:-0.01em" style-hover="background:#eeb673">0411 884 153</a>
+        <a href="#quote" style="display:flex; align-items:center; justify-content:center; background:#ffffff14; border:1.5px solid #ffffff33; color:#f2efe8; font-family:'Archivo',sans-serif; font-weight:700; font-size:18px; padding:18px; border-radius:8px" style-hover="background:#ffffff22">Or request a call back</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- mobile sticky call bar -->
+  <div style="position:fixed; bottom:0; left:0; right:0; z-index:50; display:none; background:#12241d; border-top:1px solid #ffffff22; padding:10px 12px; gap:10px" data-mobile-bar="1">
+    <a href="tel:0411884153" style="flex:1; text-align:center; background:#e0a763; color:#12241d; font-family:'Archivo',sans-serif; font-weight:800; font-size:17px; padding:14px; border-radius:7px">Call now</a>
+    <a href="#quote" style="flex:1; text-align:center; background:#c9762a; color:#fff; font-family:'Archivo',sans-serif; font-weight:800; font-size:17px; padding:14px; border-radius:7px">Free quote</a>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showProjects&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sections&quot;},&quot;showStickyCallBar&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Behaviour&quot;}}">
+class Component extends DCLogic {
+  state = { open: 0, submitted: false, sentName: "" };
+
+  renderVals() {
+    const faqData = [
+      ["How much do shade sails cost?", "Most supplied-and-installed sails start from around $4,490. The final price depends on the span, number of posts, fabric and how the sail is fixed — we give you a written quote after measuring on site, with no obligation."],
+      ["What colour options do you have?", "A wide range of commercial-grade fabrics and colours to suit pools, driveways, BBQ areas, playgrounds or business premises. We'll bring samples and help you match your home."],
+      ["Will a shade sail make my place darker?", "Our fabrics are designed to cut UV and heat, not light. How bright the space stays depends on fabric choice and orientation — we'll recommend the right combination for your area."],
+      ["Which shade sail do you design most?", "Hyperbolic sails — two diagonally high and two diagonally low points. They shed water, look great and hold tension. We build every other shape too, for domestic, commercial and industrial sites."],
+      ["Do you handle installation?", "Yes. Our own trained installers arrive with the right tools and durable hardware, install to the engineered design, tension it correctly and leave the site neat and tidy."]
+    ];
+
+    return {
+      priceBar: this.props.showPriceBar ?? true,
+      projects: this.props.showProjects ?? true,
+      submitted: this.state.submitted,
+      notSubmitted: !this.state.submitted,
+      sentName: this.state.sentName,
+      onSubmit: (e) => {
+        e.preventDefault();
+        const fd = new FormData(e.target);
+        this.setState({ submitted: true, sentName: (fd.get("name") || "").toString().split(" ")[0] });
+      },
+      testimonials: [
+        { name: "Cheryl Shoard", initials: "CS", quote: "\u201cE2W were a pleasure to deal with right from the get go. They were professional and friendly and offered many different choices for what I was after. The time frame was very reasonable and the outcome was exactly what I was expecting if not better.\u201d" },
+        { name: "Jeff McLean", initials: "JM", quote: "\u201cFrom the moment I contacted them online to the final day the sail was installed, the process was smooth, the staff were professional and helpful, and the end product is brilliant. High quality material at a very competitive price. Can not recommend them any higher!\u201d" },
+        { name: "Thelmarie Neser", initials: "TN", quote: "\u201cHighly recommend for their friendly, professional, and reliable service. The team was easy to deal with, communicated well throughout the process, and delivered high-quality workmanship. Very happy with the end result and would definitely use them again.\u201d" }
+      ],
+      applications: [
+        { slot: "ss-app-pool", ph: "Pool shade sail", title: "Pool areas", body: "Keep the water and paving cooler, and the whole family out of the worst of the UV." },
+        { slot: "ss-app-patio", ph: "Patio / backyard sail", title: "Patios & backyards", body: "Turn a hot deck, courtyard or garden into usable outdoor living all summer." },
+        { slot: "ss-app-car", ph: "Carport / driveway sail", title: "Carports & driveways", body: "Hail, sun and bird mess off the car, boat, caravan or bike — without building a garage." },
+        { slot: "ss-app-school", ph: "Playground / school sail", title: "Schools & playgrounds", body: "Higher wind loads, heavy use, safe fixings — shade for childcare, parks and commercial sites." }
+      ],
+      reasons: [
+        { title: "Engineered, not guessed", body: "Sun angles, wind loads, drainage and fixing points are worked out for your site before anything is made." },
+        { title: "Tensioned properly", body: "Correct tension means no flapping, no sagging and far less movement in a storm." },
+        { title: "Materials that last", body: "Commercial-grade high-density fabric that won't mildew, fade or rot, warranted 10 years." },
+        { title: "Built stronger", body: "Heavier powder-coated posts, web-reinforced corners, Tenara thread and 316 stainless fixings and cable." },
+        { title: "Australian made", body: "Designed and manufactured here, creating local jobs — not imported flat-pack kits." },
+        { title: "One team, start to finish", body: "The person who quotes your job is the team that installs it. Honest advice, no pressure." }
+      ],
+      steps: [
+        { n: "1", title: "Call or send the form", body: "Tell us roughly what you want shaded. We'll call back the same day where we can." },
+        { n: "2", title: "On-site measure", body: "We track the sun over your property, check fixing options and give you a written quote." },
+        { n: "3", title: "Choose & we build", body: "Pick your shape, size, fabric and colour. Your sail is then made to those measurements." },
+        { n: "4", title: "Professional install", body: "Anchors set, cloth tensioned, site left clean. Then it's yours to enjoy." }
+      ],
+      faqs: faqData.map(([q, a], i) => ({
+        q, a,
+        open: this.state.open === i,
+        icon: this.state.open === i ? "–" : "+",
+        toggle: () => this.setState(s => ({ open: s.open === i ? -1 : i }))
+      }))
+    };
+  }
+
+  componentDidMount() {
+    const apply = () => {
+      const w = window.innerWidth;
+      const sm = w < 900;
+      const bar = (this.props.showStickyCallBar ?? true) && sm;
+      document.querySelectorAll("[data-mobile-bar]").forEach(el => { el.style.display = bar ? "flex" : "none"; });
+      document.querySelectorAll("[data-hide-sm]").forEach(el => { el.style.display = sm ? "none" : "inline"; });
+      document.querySelectorAll('section > div[style*="grid-template-columns:1.15fr"], section > div[style*="grid-template-columns:1.1fr"]').forEach(el => {
+        el.style.gridTemplateColumns = sm ? "minmax(0,1fr)" : "";
+      });
+      document.querySelectorAll('div[style*="repeat(4,minmax(0,1fr))"]').forEach(el => {
+        el.style.gridTemplateColumns = sm ? "repeat(2,minmax(0,1fr))" : "";
+      });
+      document.querySelectorAll('div[style*="repeat(3,minmax(0,1fr))"]').forEach(el => {
+        el.style.gridTemplateColumns = sm ? "minmax(0,1fr)" : "";
+      });
+      document.body.style.paddingBottom = bar ? "76px" : "0";
+    };
+    apply();
+    this._apply = apply;
+    this._onResize = apply;
+    window.addEventListener("resize", apply);
+  }
+
+  componentDidUpdate() { if (this._apply) this._apply(); }
+
+  componentWillUnmount() {
+    if (this._onResize) window.removeEventListener("resize", this._onResize);
+  }
+}
+
+</script>
+</body>
+</html>
